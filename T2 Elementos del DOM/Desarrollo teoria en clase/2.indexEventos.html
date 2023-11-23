@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        button{
+            background-color: deepskyblue;
+            color: white;
+            border: solid deepskyblue;
+            border-radius: 10px;
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        button:hover{
+            cursor: pointer;
+            background-color: deeppink;
+            border: solid deeppink;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function saludar2(){
+            alert("Saludar botón 2");
+        }
+    </script>
+    <button id="idBoton1" onclick="alert('Saludar botón 1')">Saludar1</button>
+    <br><br>
+    <button id="idBoton2" onclick="saludar2()">Saludar2</button>
+    <br><br>
+    <button id="idBoton3" onclick="saludar3()">Saludar3</button>
+    <br><br>
+    <button id="idBoton4">Saludar4</button>
+    <br><br>
+    <button id="idBoton5" >Saludar5</button>
+
+    <!--<script src="./js/8.eventos.js"></script>-->
+    <script src="./js/9.objetoEvents.js"></script>
+</body>
+</html>

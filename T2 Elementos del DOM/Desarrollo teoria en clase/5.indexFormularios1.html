@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form id="idForm1" name="nDatos1">
+            <input type="text" id="idNombre" name="nTexto" placeholder="valor del texto">
+            <br><br>
+            <input type="url" id="idUrl" name="nUrl" value="https://iesmartinezm.es">
+        </form>
+    </div>
+
+    <div>
+        <h1>Formulario para acceder a todos sus elementos</h1>
+        <form id="idForm2" name="nDatos2">
+            <label for(nTexto1)>input texto pls</label>
+            <input type="text" id="idTexto1" name="nTexto1" value="valor del texto 1">
+            <br><br>
+            <textarea id="idTextArea1" name="nTextArea1" cols="20" rows="5" value="Escribe tu texto Largo Aqui">Escribe aqui</textarea>
+        </form>
+    </div>
+    
+    <div>
+        <label for="idrButton1">SI</label>
+        <input type="radio" name="nrButton1" id="idrButton1" value="si">
+        <label for="idrButton2">NO</label>
+        <input type="radio" name="nrButton1" id="idrButton2" value="no" checked>
+    </div>
+    <br><br>
+
+    <div>
+        <label for="idCheck1">Bocadillo</label>
+        <input type="checkbox" id="idCheck1" name="nCheck1" value="bocadillo" checked>
+        <label for="idCheck1">Fruta</label>
+        <input type="checkbox" id="idCheck2" name="nCheck1" value="fruta">
+        <label for="idCheck1">Pastelito</label>
+        <input type="checkbox" id="idCheck3" name="nCheck1" value="pastelito" checked>
+    </div>
+    <br><br>
+    <div>
+        <label for="idLenguaje">Elije tu lenguaje favorito</label>
+        <select id="idLenguaje">
+            <option value="1" selected>Java</option>
+            <option value="2">PHP</option>
+            <option value="3">C</option>
+            <option value="4">Python</option>
+        </select>
+    </div>
+    <script src="./js/13.Formulario1.js"></script>
+</body>
+</html>
