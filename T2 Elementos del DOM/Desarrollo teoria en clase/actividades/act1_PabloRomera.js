@@ -3,14 +3,14 @@
     let lista = document.querySelector("ul");
 
     let random;
-    let num;
+    let li;
 
     let miBoton1 = document.querySelector("#idBoton1");
     miBoton1.onclick = function(){
         random = Math.round(Math.random()* (100-1) + 1);
-        num = document.createElement("li");
-        num.append(random);
-        lista.append(num);
+        li = document.createElement("li");
+        li.append(random);
+        lista.append(li);
         console.clear()
         console.log(lista);
     }
