@@ -1,6 +1,9 @@
 "use strict"
 {
     let table = document.querySelector("table");
+    table.style.setProperty("border", "red solid");
+    table.style.setProperty("border-radius","15px");
+    table.style.setProperty("color","gold");
     let nFilas=10, ncolumnas=10;
     let fila /*= document.createElement("tr")*/;
     let columna /*= document.createElement("td")*/;
@@ -28,7 +31,7 @@
                     countPrimos ++;
                 }
             }
-            if (countPrimos <= 2){
+            if (countPrimos == 2){
                 elem.setAttribute("style","background-color: yellow")
             }
         }
