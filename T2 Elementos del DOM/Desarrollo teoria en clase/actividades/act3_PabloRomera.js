@@ -1,9 +1,32 @@
 "use strict"
 {
-    let miDiv = document.querySelector("div");
+    // let miDiv = document.querySelector("div");
+    let boton1 = document.createElement("button");
+    boton1.setAttribute("id", "idBoton1");
+    boton1.textContent = "Marcar Todos";
+    document.body.append(boton1);
+
+    let boton2 = document.createElement("button");
+    boton2.setAttribute("id", "idBoton2");
+    boton2.textContent = "Desmarcar Todos";
+    document.body.append(boton2);
+
+    let boton3 = document.createElement("button");
+    boton3.setAttribute("id", "idBoton3");
+    boton3.textContent = "Cambiar Tamaño a pares";
+    document.body.append(boton3);
+
+    let boton4 = document.createElement("button");
+    boton4.setAttribute("id", "idBoton4");
+    boton4.textContent = "Restaurar Tamaños";
+    document.body.append(boton4);
+
+    let miDiv = document.createElement("div");
+    document.body.append(miDiv);
+
     let numRandom, label, caja, salto;
 
-    for (let i=0; i <= 100; i++){
+    for (let i=0; i <= 10; i++){
         numRandom = Math.round(Math.random()* (200-100) + 100);
         label = document.createElement("label");
         label.textContent = i;
@@ -23,7 +46,7 @@
     let miBoton1 = document.querySelector("#idBoton1");
     miBoton1.onclick = function(){
         for(let elem of cajas){
-            elem.setAttribute("checked", "");
+            // elem.setAttribute("checked", "");
             elem.checked = true;
         }
         console.clear();
@@ -34,7 +57,7 @@
     miBoton2.onclick = function(){
         for(let elem of cajas){
             elem.checked = false;
-            elem.removeAttribute("checked");
+            // elem.removeAttribute("checked");
         }
         console.clear();
         console.log(miDiv);
