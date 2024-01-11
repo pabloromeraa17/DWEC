@@ -1,0 +1,33 @@
+{"results": [
+	{"gender":"male",
+	"name":{"title":"Mr","first":"José Luis","last":"Guzmán"},
+	"location": {
+			"street":{"number":9354,"name":"Andador Costa Rica"},
+			"city":"Atenango del Río","state":"Sinaloa","country":"Mexico","postcode":21387,
+			"coordinates":{"latitude":"22.8539","longitude":"-166.5812"},
+			"timezone":{"offset":"+1:00","description":"Brussels, Copenhagen, Madrid, Paris"}
+		},
+	"email":"joseluis.guzman@example.com",
+	"login": {"uuid":"867e00c2-8d2d-43fe-aff2-32923faa2401",
+		"username":"yellowcat308",
+		"password":"weasel",
+		"salt":"FZl2o06A",
+		"md5":"d5f81b0f6df636e242076a1678501b45",
+		"sha1":"f740f62e529f7ee1fff70989bf29f4fb5dea684e",
+		"sha256":"0bf9a6fc1531d47a3abb652a45d642cb3a66dfba7d712fdbf16681dc36ec28f6"
+		},
+	"dob":{"date":"1952-09-01T14:33:03.852Z","age":71},
+	"registered":{"date":"2014-04-08T19:52:41.876Z","age":9},
+	"phone":"(629) 661 2000",
+	"cell":"(674) 246 5537",
+	"id":{"name":"NSS","value":"57 42 24 2144 6"},
+	"picture":{
+		"large":"https://randomuser.me/api/portraits/men/13.jpg",
+		"medium":"https://randomuser.me/api/portraits/med/men/13.jpg",
+		"thumbnail":"https://randomuser.me/api/portraits/thumb/men/13.jpg"
+		},
+	"nat":"MX"
+	}
+	],
+	"info":{"seed":"2cc63a7ee610fa33","results":1,"page":1,"version":"1.4"}
+}
