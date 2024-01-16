@@ -142,36 +142,39 @@
     document.body.append(titulo2);
 
     let caja2 = document.createElement("div");
-    caja2.setAttribute("style", "border: 2px dashed ");
+    caja2.setAttribute("style", "border: 2px dashed; display: inline-block;");
 
     let botonCargarTarea = document.createElement("button");
     botonCargarTarea.textContent = "Cargar tareas";
 
-    caja2.append(botonCargarTarea);
-    document.body.append(botonCargarTarea);
+    caja2.appendChild(botonCargarTarea);
+    document.body.appendChild(caja2);
 
-    botonCargarTarea.onclick = function RecogerDeLocalStorage(){
-        // let contador = parseInt(getCookie("contador")) || 0;
-        // contador++;
-        // setCookie("contador", contador);
-
-        // let numero= textoInputNumero;
-        // let nombre= textoInputNombre;
-        // let prioridad= valorPrioridad;
-
-        // miArray.push(numero,nombre,prioridad);
-
-        // localStorage.setItem("Tarea "+contador, JSON.stringify(miArray));
-        // contador++
-
-        let valoresFiltrados = [];
+    botonCargarTarea.onclick = function RecogerDeLocalStorage() {
+        while (caja2.childNodes.length > 1) {
+            caja2.removeChild(caja2.lastChild);
+        }
+        
+        let tareas = [];
 
         for (let clave in localStorage) {
             if (clave.startsWith("Tarea")) {
                 let valor = JSON.parse(localStorage.getItem(clave));
-                valoresFiltrados.push(valor);
+                let tarea = {
+                    numero: valor[0],
+                    nombre: valor[1],
+                    prioridad: valor[2]
+                };
+                tareas.push(tarea);
             }
         }
-        location.reload();
+
+        tareas.sort((a, b) => a.prioridad - b.prioridad);
+
+        for (let tarea of tareas) {
+            let tareaElement = document.createElement("p");
+            tareaElement.textContent = "Número: " + tarea.numero + ", Nombre: " + tarea.nombre + ", Prioridad: " + tarea.prioridad;
+            caja2.appendChild(tareaElement);
+        }
     }
 }
