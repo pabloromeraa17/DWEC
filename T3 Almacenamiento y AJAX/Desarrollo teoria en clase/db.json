@@ -1,40 +1,46 @@
 {
   "usuarios": [
-   {
-    "id": 1,
-    "usuario": "Juanpe",
-    "email": "juan.pedro.bernal@iesmartinezm.es",
-	  "foto": "https://avatars.githubusercontent.com/u/144746228?v=4"
-   },
-   {
-    "id": 2,
-    "usuario": "Eduardo",
-    "email": "eduardo.serrano@iesmartinezm.es",
-	  "foto": "https://media.licdn.com/dms/image/D4D03AQHuAfGXeckqWQ/profile-displayphoto-shrink_800_800/0/1670952226535?e=1710979200&v=beta&t=QXpdJbZ-iUNrX00mxPcnhHfZ_5JUboX51tnWVItbBGw"
-   },
-   {
-    "id": 3,
-    "usuario": "Daniel",
-    "email": "daniel.vidal@iesmartinezm.es",
-	  "foto" : "https://media.licdn.com/dms/image/C4E03AQEomJdAhr4k-g/profile-displayphoto-shrink_800_800/0/1516776296774?e=1710979200&v=beta&t=FJQwu-DZeiVnLH4vXHvDNCK2Xtl2QyjLcyXNTHcofj8"
-   }
+    {
+      "id": "1",
+      "usuario": "Juanpe",
+      "email": "juan.pedro.bernal@iesmartinezm.es",
+      "foto": "https://avatars.githubusercontent.com/u/144746228?v=4"
+    },
+    {
+      "id": "2",
+      "usuario": "Eduardo",
+      "email": "eduardo.serrano@iesmartinezm.es",
+      "foto": "https://media.licdn.com/dms/image/D4D03AQHuAfGXeckqWQ/profile-displayphoto-shrink_800_800/0/1670952226535?e=1710979200&v=beta&t=QXpdJbZ-iUNrX00mxPcnhHfZ_5JUboX51tnWVItbBGw"
+    },
+    {
+      "id": "3",
+      "usuario": "Daniel",
+      "email": "daniel.vidal@iesmartinezm.es",
+      "foto": "https://media.licdn.com/dms/image/C4E03AQEomJdAhr4k-g/profile-displayphoto-shrink_800_800/0/1516776296774?e=1710979200&v=beta&t=FJQwu-DZeiVnLH4vXHvDNCK2Xtl2QyjLcyXNTHcofj8"
+    },
+    {
+      "id": "4",
+      "usuario": "Pablo Romera",
+      "email": "promgon542@iesmartinezm.es",
+      "foto": "https://avatars.githubusercontent.com/u/131361197?v=4"
+    }
   ],
   "heroes": [
-   {
-    "id": "dc-batman",
-    "superhero": "Batman",
-    "publisher": "DC Comics",
-    "alter_ego": "Bruce Wayne",
-    "first_appearance": "Detective Comics #27",
-    "characters": "Bruce Wayne"
-   },
-   {
-    "id": "dc-superman",
-    "superhero": "Superman",
-    "publisher": "DC Comics",
-    "alter_ego": "Kal-El",
-    "first_appearance": "Action Comics #1",
-    "characters": "Kal-El"
-   }
- ]
+    {
+      "id": "dc-batman",
+      "superhero": "Batman",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne"
+    },
+    {
+      "id": "dc-superman",
+      "superhero": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Kal-El",
+      "first_appearance": "Action Comics #1",
+      "characters": "Kal-El"
+    }
+  ]
 }
